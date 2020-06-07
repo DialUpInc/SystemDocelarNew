@@ -20,12 +20,12 @@
                             class="hide-menu"> Funcionarios
                         </span></a>
                 </li>
-                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                <li class="sidebar-item"><a href="cad_fornecedor.php" class="sidebar-link"><span
                             class="hide-menu"> Fornecedores
                         </span></a>
                 </li>
 
-                <li class="sidebar-item"><a href="#" class="sidebar-link"><span
+                <li class="sidebar-item"><a href="cad_materiais.php" class="sidebar-link"><span
                             class="hide-menu"> Cadastro de Materiais
                         </span></a>
                 </li>

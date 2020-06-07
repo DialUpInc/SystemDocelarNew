@@ -125,12 +125,12 @@
                        <div class="page-breadcrumb">
                            <div class="row">
                                <div class="col-7 align-self-center">
-                                   <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Cadastrar Funcionário</h4>
+                                   <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Cadastrar Materiais</h4>
                                    <div class="d-flex align-items-center">
                                        <nav aria-label="breadcrumb">
                                            <ol class="breadcrumb m-0 p-0">
                                                <li class="breadcrumb-item"><a href="index.html" class="text-muted">Inicio</a></li>
-                                               <li class="breadcrumb-item text-muted active" aria-current="page">Cadastro Funcionário</li>
+                                               <li class="breadcrumb-item text-muted active" aria-current="page">Cadastro Materiais</li>
                                            </ol>
                                        </nav>
                                    </div>
@@ -139,129 +139,99 @@
                        </div>
 
                        <div class="container-fluid">
-                           <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nome">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Sobrenome">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="CPF">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Telefone">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
-                                    <form>
-                                        
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                <option selected>Estado</option>
-                                                <option value="AC">Acre</option>
-                                                <option value="AL">Alagoas</option>
-                                                <option value="AP">Amapá</option>
-                                                <option value="AM">Amazonas</option>
-                                                <option value="BA">Bahia</option>
-                                                <option value="CE">Ceará</option>
-                                                <option value="DF">Distrito Federal</option>
-                                                <option value="ES">Espírito Santo</option>
-                                                <option value="GO">Goiás</option>
-                                                <option value="MA">Maranhão</option>
-                                                <option value="MT">Mato Grosso</option>
-                                                <option value="MS">Mato Grosso do Sul</option>
-                                                <option value="MG">Minas Gerais</option>
-                                                <option value="PA">Pará</option>
-                                                <option value="PB">Paraíba</option>
-                                                <option value="PR">Paraná</option>
-                                                <option value="PE">Pernambuco</option>
-                                                <option value="PI">Piauí</option>
-                                                <option value="RJ">Rio de Janeiro</option>
-                                                <option value="RN">Rio Grande do Norte</option>
-                                                <option value="RS">Rio Grande do Sul</option>
-                                                <option value="RO">Rondônia</option>
-                                                <option value="RR">Roraima</option>
-                                                <option value="SC">Santa Catarina</option>
-                                                <option value="SP">São Paulo</option>
-                                                <option value="SE">Sergipe</option>
-                                                <option value="TO">Tocantins</option>
-                                                <option value="EX">Estrangeiro</option>
-                                            </select>
 
-                                    </form>
+                       <div class="table-responsive-sm">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">ID</th>
+                                                <th scope="col">Materiais</th>
+                                                <th scope="col">Quantidade</th>
+                                                <th scope="col">Tamanho(cm)</th>
+                                                <th scope="col">Valor/UN</th>
+                                                <th scope="col">SubTotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <select class="custom-select mr-sm-2 " id="inlineFormCustomSelect" data-size="2">
+                                                        <option selected>Materiais</option>
+                                                        <optgroup label="Dobradiças">
+                                                            <option value="dobradica_reta">Reta</option>
+                                                            <option value="dobradica_curva">Curva</option>
+                                                            <option value="dobradica_curva">Robo</option>
+                                                        </optgroup>
+                                                        
+                                                        <optgroup label="Barras de Perfil">
+                                                            <option value="barras_dma">DMA</option>
+                                                            <option value="barras_mmo">MMO</option>
+                                                        </optgroup>
+                                                        <optgroup label="Trilhos">
+                                                            <option value="trilhos_superior">Superior</option>
+                                                            <option value="trilhos_inferior">Inferior</option>
+                                                        </optgroup>
+                                                        <optgroup label="Colas">
+                                                            <option value="cola_tekbond">TekBond</option>
+                                                            <option value="cola_contato">Contato</option>
+                                                        </optgroup>
+                                                       
+                                                        <optgroup label="L's">
+                                                            <option value="l_cadeirinha">Cadeirinha</option>
+                                                            <option value="l_parede">Parede</option>
+                                                            <option value="l_trapeizoidal">Trapeizoidal</option>
+                                                        </optgroup>
+                                                        
+                                                        
+                                                        <optgroup label="Chapas">
+                                                             <option value="chapa_branca">Branca</option>
+                                                            <option value="chapa_madeirado">Madeirado</option>
+                                                            <option value="chapa_brilhosa">Brilhosa</option>
+                                                            <option value="chapa_cristalino">Cristalino</option>
+                                                        </optgroup>
+                                                        <option value="fita_borda">Fita de Borda</option>
+                                                        <option value="suporte_prateleira">Suporte Prateleira</option>
+                                                        <option value="kit">Kit Porta de Correr</option>
+                                                        
+                                                        <option value="corredica">Corrediça</option>
+                                                        <option value="parafusos">Parafusos</option>
+                                                    </select>
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="Quantidade">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="Tamanho">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form-control" placeholder="Valor Unitário">
+                                                </td>
+                                                <td>UM NUMERO</td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <th scope="row">2</th>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                                <td>Cell</td>
+                                            </tr> -->
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Cidade">
-                                    </div>
-                                </div>
-                               
-                            </div>
-                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Bairro">
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Complemento">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Endereço">
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="CEP">
-                                    </div>
-                                </div>
-                                
-                            </div>
 
                             <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
-                                    <form>
-                                        <div class="form-group">
-                                            <input style="color: #b8c3d8;" type="date" class="form-control" value="" >
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-4">
-                                    <form>
-                                            
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                <option selected>Cargo</option>
-                                                <option value="MT">Montador</option>
-                                                <option value="MC">Marceneiro</option>
-                                                <option value="X">Algum Cargo</option>
-                                                <option value="X">Algum Cargo</option>
-                                            </select>
-                                    </form>
-                                </div>
-                            </div>
-
-                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-8">
+                                <div class="col-md-12">
+                                    <button style="float:left;" type="button" class="btn waves-effect waves-light btn-outline-dark">Adicionar Produto</button>
                                     <button style="float:right;" type="button" class="btn waves-effect waves-light btn-outline-success">Cadastrar</button>
                                 </div>
                             </div>

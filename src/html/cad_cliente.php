@@ -130,7 +130,7 @@
                                        <nav aria-label="breadcrumb">
                                            <ol class="breadcrumb m-0 p-0">
                                                <li class="breadcrumb-item"><a href="index.html" class="text-muted">Inicio</a></li>
-                                               <li class="breadcrumb-item text-muted active" aria-current="page">Cadastro cliente</li>
+                                               <li class="breadcrumb-item text-muted active" aria-current="page">Cadastro Cliente</li>
                                            </ol>
                                        </nav>
                                    </div>
@@ -225,9 +225,14 @@
                                         <input type="text" class="form-control" placeholder="Complemento">
                                     </div>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Endereço">
+                                        <input type="text" class="form-control" placeholder="Endereço">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="CEP">
                                     </div>
                                 </div>
                                 

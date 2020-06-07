@@ -125,12 +125,12 @@
                        <div class="page-breadcrumb">
                            <div class="row">
                                <div class="col-7 align-self-center">
-                                   <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Cadastrar Funcionário</h4>
+                                   <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Cadastrar Fornecedor</h4>
                                    <div class="d-flex align-items-center">
                                        <nav aria-label="breadcrumb">
                                            <ol class="breadcrumb m-0 p-0">
                                                <li class="breadcrumb-item"><a href="index.html" class="text-muted">Inicio</a></li>
-                                               <li class="breadcrumb-item text-muted active" aria-current="page">Cadastro Funcionário</li>
+                                               <li class="breadcrumb-item text-muted active" aria-current="page">Cadastro Fornecedor</li>
                                            </ol>
                                        </nav>
                                    </div>
@@ -140,16 +140,16 @@
 
                        <div class="container-fluid">
                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
+                                <div class="col-md-8">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nome">
+                                        <input type="text" class="form-control" placeholder="Razão Social">
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <!-- <div class="col-md-4">
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Sobrenome">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <input type="email" class="form-control" placeholder="Email">
@@ -160,7 +160,7 @@
                             <div class="row" style="justify-content: center;">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="CPF">
+                                        <input type="text" class="form-control" placeholder="CNPJ">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -237,29 +237,6 @@
                                 </div>
                                 
                             </div>
-
-                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-4">
-                                    <form>
-                                        <div class="form-group">
-                                            <input style="color: #b8c3d8;" type="date" class="form-control" value="" >
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-4">
-                                    <form>
-                                            
-                                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                                <option selected>Cargo</option>
-                                                <option value="MT">Montador</option>
-                                                <option value="MC">Marceneiro</option>
-                                                <option value="X">Algum Cargo</option>
-                                                <option value="X">Algum Cargo</option>
-                                            </select>
-                                    </form>
-                                </div>
-                            </div>
-
                             <div class="row" style="justify-content: center;">
                                 <div class="col-md-8">
                                     <button style="float:right;" type="button" class="btn waves-effect waves-light btn-outline-success">Cadastrar</button>
